@@ -20,8 +20,8 @@ public class User {
     private String name;
     private String email;
     private String phone;
-    private String postalCode;
+    private String postal_code;
     private String address;
-    private LocalDate birthDate;
-    private LocalDate createdAt;
+    private LocalDate birth_date;
+    private LocalDate created_at;
 }

@@ -43,9 +43,9 @@ public class UserController {
             user.setEmail(userDetails.getEmail());
             user.setAddress(userDetails.getAddress());
             user.setPhone(userDetails.getPhone());
-            user.setPostalCode(userDetails.getPostalCode());
-            user.setBirthDate(userDetails.getBirthDate());
-            user.setCreatedAt(userDetails.getCreatedAt());
+            user.setPostal_code(userDetails.getPostal_code());
+            user.setBirth_date(userDetails.getBirth_date());
+            user.setCreated_at(userDetails.getCreated_at());
             return svc.save(user);
         }
         return null;

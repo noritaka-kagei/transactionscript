@@ -26,7 +26,7 @@ docker exec -it some-postgres psql -U postgres -f /init.sql
 
 ### Table Schema
 
-|ID|Name|E-mail|Phone Number|Postal Code|Address|Birth Date|Created at|
+|id|name|email|phone|postal_code|address|birth_date|created_at|
 |:--|:--|:--|:--|:--|:--|:--|:--|
 |1|山田 太郎|taro.yamada@example.com|080-1234-5678|123-4567|東京都千代田区千代田1-1|1980-01-01|timestamp|
 |2|鈴木 花子|hanako.suzuki@example.com|090-9876-5432|987-6543|大阪府大阪市北区梅田2-4-9|1990-02-15|timestamp|
@@ -56,20 +56,20 @@ curl http://localhost:8080/users
         "name": "山田 太郎",
         "email": "taro.yamada@example.com",
         "phone": "080-1234-5678",
-        "postalCode": "123-4567",
+        "postal_code": "123-4567",
         "address": "東京都千代田区千代田1-1",
-        "birthDate": "1980-01-01",
-        "createdAt": "2024-06-15"
+        "birth_date": "1980-01-01",
+        "created_at": "2024-06-15"
     },
     {
         "id": 2,
         "name": "鈴木 花子",
         "email": "hanako.suzuki@example.com",
         "phone": "090-9876-5432",
-        "postalCode": "987-6543",
+        "postal_code": "987-6543",
         "address": "大阪府大阪市北区梅田2-4-9",
-        "birthDate": "1990-02-15",
-        "createdAt": "2024-06-15"
+        "birth_date": "1990-02-15",
+        "created_at": "2024-06-15"
     }
 ]
 </details>
@@ -95,9 +95,9 @@ curl -X POST http://localhost:8080/users \
     "name": "むきむき太郎",
     "email": "java-training@example.com",
     "phone": "080-1234-1234",
-    "postalCode": null,
+    "postal_code": "111-1111",
     "address": "神奈川県川崎市中原区XX町NN-N",
-    "birthDate": null,
-    "createdAt": null
+    "birth_date": "2000-01-01",
+    "created_at": "2024-06-15"
 }
 </details>
